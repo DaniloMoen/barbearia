@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Espaço Visual Masculino</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1 id="nome-produto">TITULO</h1>
+            <img id="imagem-produto" src="" />
+            <p id="descricao-produto">DESCRICAO</p>
+            <!--captura as informações-->>
+            <script>
+                function getParametro(dados) {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    return urlParams.get(dados)
+                }
+                //informações recebidas
+                document.getElementById("nome-produto").textContent = getParametro("nome");
+                document.getElementById("imagem-produto").src = getParametro("imagem");
+                document.getElementById("descricao-produto").textContent = getParametro("descricao");
+
+            </script>
+        </div>
+    </main>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+    
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    
+        div {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+    
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+    
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+    
+</body>
+
+</html>

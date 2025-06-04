@@ -1,0 +1,278 @@
+body {
+  margin: 0%;
+  border: 0;
+}
+
+.logo {
+  width: 15%;
+}
+
+/* Header */
+header {
+  background-color: #d0a933;
+}
+
+.divHeader {
+  position: relative;
+  margin: auto;
+  width: auto;
+}
+
+/* Menu */
+nav {
+  position: absolute;
+  top: 35px;
+  right: 60px;
+}
+
+nav li {
+  display: inline;
+  color: white;
+  font-size: 30;
+  margin-right: 15px;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+}
+
+/* Sobre nós */
+.sobre_nos {
+  margin: 0;
+  background-color: #FFFFFE;
+  text-align: justify;
+  width: 80%;
+  display: inline-block;
+  margin-left: 10%;
+  font-size: 21px;
+}
+
+.img_sobrenos {
+  width: 80%;
+  float: left;
+  margin: 0 40px 0 0;
+}
+
+.titulo_sobre {
+  text-align: center;
+  background-color: #d0a933;
+  color: #FFFFFE;
+  padding: 10px;
+  font-size: 28px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Título serviços */
+.titulo_serviço {
+  text-align: center;
+  background-color: #d0a933;
+  color: #FFFFFE;
+  padding: 10px;
+  font-size: 28px;
+  border-radius: 5px;
+}
+
+/* Seções */
+.mapaGeral {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+/* Vídeo */
+.video-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 500px;
+  max-width: 900px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #23270f, #424320, #63642c);
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 60px;
+  filter: drop-shadow(0 0 6px rgba(229, 255, 0, 0.5));
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #ffd900;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #fff;
+  transform: scale(1.2);
+  text-shadow: 0 0 10px #e5ff00;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #e5ff00;
+  text-shadow: 0 0 5px #e5ff00;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-bottom span {
+  color: #fbff00;
+  font-weight: bold;
+  text-shadow: 0 0 8px #fbff00;
+}
+
+.footer-hr {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 30px 0;
+}
+
+/* Responsivo footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 8px #fff;
+  transform: scale(1.05);
+}
+
+.nav-link.active {
+  background-color: #fff;
+  color: #d0a933;
+  box-shadow: 0 0 10px #fff;
+}
+
+/* Campo de busca e filtros */
+.search-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 250px;
+}
+
+/* >>> NOVO CSS PARA OS PRODUTOS <<< */
+
+/* Produtos lado a lado */
+.lista_nossosprodutos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Estilo de cada produto */
+.lista_nossosprodutos li {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Zoom ao passar o mouse */
+.lista_nossosprodutos li:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagens dos produtos */
+.img_nossosprodutos {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
